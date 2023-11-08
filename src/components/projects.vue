@@ -115,13 +115,6 @@ export default {
         link: "https://dashwaste.co.za/"
       },
       {
-        title: 'Shutter Boss Photography',
-        text: "I developed Shutter Boss Photography website with the following tech stack:",
-        tech: 'Vue, Vuetify, JavaScript, Nodejs, Git, and PWA(Progressive Web App).',
-        img: 'img/picts/2.jpg',
-        link: "https://shutterboss.co.za/"
-      },
-      {
         title: 'Laaste Kamp',
         text: "I developed Laaste Kamp website with the following tech stack:",
         tech: 'Vue, Vuetify, JavaScript, Nodejs, and Git.',
@@ -134,6 +127,13 @@ export default {
         tech: 'Wordpress with Divi Theme Builder.',
         img: 'img/picts/4.jpg',
         link: "https://zeegroup.co.za/home/"
+      },
+      {
+        title: 'Shutter Boss Photography',
+        text: "I developed Shutter Boss Photography website with the following tech stack:",
+        tech: 'Vue, Vuetify, JavaScript, Nodejs, Git, and PWA(Progressive Web App).',
+        img: 'img/picts/2.jpg',
+        link: "https://shutter-bug-47f01.web.app/"
       },
       {
         title: 'Salary CRUD system',
