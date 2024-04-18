@@ -12,18 +12,23 @@
       align="start" 
       :style="$vuetify.display.smAndDown ? 'margin-top: 1cm;' : 'margin-top: 2.5cm; margin-left: 2cm;'"
       >
-        <v-row justify="center" :class="$vuetify.display.smAndDown ? 'rowBg' : ''">
-          <v-col :class="$vuetify.display.smAndDown ? 'text-white' : 'text-white'">
+        <v-row 
+        justify="center"
+        :style="$vuetify.display.width > 650 && $vuetify.display.width < 950 ? 'margin-top: 5cm;' : ''" 
+        :class="$vuetify.display.smAndDown ? 'rowBg' : ''"
+        >
+          <v-col :class="$vuetify.display.smAndDown ? 'text-white colBg' : 'text-white'">
             <p 
             style="font-weight: 800; font-size: 35px; display: inline-flex;"
             > 
               Hi,<v-img class="ml-4" :width="$vuetify.display.smAndDown ? '40' : '50'" src="@/assets/hand-wave.svg"/> 
             </p>
+            <br/><br/>
             <p 
-            :style="$vuetify.display.smAndDown ? 'font-weight: 700; font-size: 26px; margin-top: 10px;' : 'font-weight: 800; font-size: 35px;'"
+            :style="$vuetify.display.smAndDown ? 'font-weight: 500; font-size: 26px; margin-top: 15px;' : 'font-weight: 500; font-size: 35px;'"
             > 
-              I'm Aganze Joakim Ngabo. <br/>
-              A certified full-stack web developer with<span class="text-primary"> 3 years</span> of professional work experience.
+              I'm Aganze Joakim Ngabo.
+              A full-stack web developer with<span class="text-primary"> 3 years</span> of professional work experience.
             </p>
             <br/>
             <p class="text-#BDBDBD" style="text-align: justify;">
@@ -105,10 +110,14 @@ export default {
 </script>
 <style scoped>
 .rowBg{
+  transform: skewY(8deg);
   background-image: url('../../public/15.png'); 
-  background-size: contain; 
+  background-size: 300px; 
   background-position: right; 
   background-attachment: fixed;
-  padding-top: 5cm;
+  padding-top: 3cm; 
+}
+.colBg{
+  transform: skewY(-8deg);
 }
 </style>

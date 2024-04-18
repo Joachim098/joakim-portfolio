@@ -6,10 +6,11 @@
   : $vuetify.display.width < 650 ? 'margin-top: 3.5cm;' : 'margin-top: 2cm;'"
 >
   <v-row justify="center">
-    <v-col md="4">
-      <h2>Let me help you bring your ideas to life!</h2>
+    <v-col md="6" sm="12">
+      <h1 style="font-weight: 500;">Let me help you bring your ideas to life!</h1>
     </v-col>
   </v-row>
+  <br/><br/>
   <v-row justify="center">
     <v-col>
       <v-card elevation="10" :height="$vuetify.display.smAndDown ? '100%' : '520'" :variant="$vuetify.display.smAndDown ? 'outlined' : 'elevated'">

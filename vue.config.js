@@ -18,6 +18,16 @@ module.exports = defineConfig({
       "background_color": "black",
       "theme_color": "black",
       "orientation": "portrait-primary",
+      "screenshots": [
+        {
+         "src": "/image1.png",
+          "sizes": "397x818",
+          "type": "image/png",
+          "form_factor": "narrow",
+          "label": "AJ Portfolio",
+          "description": "Get in touch with me much more quicker by installing the app. \nPretty cool right?"
+        }
+    ]
     }
   }
 })

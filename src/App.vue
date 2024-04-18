@@ -4,7 +4,7 @@
       :height="$vuetify.display.smAndDown ? '100%' : '80'"
       flat
       absolute
-      :class="$vuetify.display.smAndDown ? 'mt-10' : ''"
+      :class="$vuetify.display.smAndDown ? 'mt-8' : ''"
       style="background: linear-gradient(to right, black, #05081e, black);"
       >
       <v-app-bar-title app class="" :style="$vuetify.display.smAndDown ? '' : 'margin-left: 2.5cm;'"> 

@@ -6,10 +6,11 @@
   : $vuetify.display.width < 650 ? 'margin-top: 3.5cm;' : 'margin-top: 2cm;'"
   >
     <v-row justify="center">
-      <v-col align="start" md="6">
-        <h2>I've developed a lot of projects using a variety of tech stack. Here's a few of them:</h2>
+      <v-col align="start" md="6" sm="12">
+        <h1 style="font-weight: 500;">Here's a few of the projects I've developed</h1>
       </v-col>
     </v-row>
+    <br/>
     <v-card
       flat
       class="text-info"
@@ -110,42 +111,49 @@ export default {
       {
         title: 'Dash Waste',
         text: "I developed and currently maintaining Dash Waste web app. It provides waste management services, pretty much like uber services. Tech stack used include:",
-        tech: 'Vue, Vuetify, JavaScript, TypeScript, Nodejs, Git, Google Cloud, Firebase, and PWA(Progressive Web App).',
+        tech: 'HTML, CSS, JavaScript, TypeScript, Vue, Vuetify, Nodejs, Git, Google Cloud, Firebase, and PWA(Progressive Web App).',
         img: "img/picts/1.jpg",
         link: "https://dashwaste.co.za/"
       },
       {
+        title: 'Virtual Edge Creatives',
+        text: "I developed and currently maintaining Virtual Edge Creatives. It provides a variety of virtual services as shown in the picture below. Tech stack used include:",
+        tech: 'HTML, CSS, JavaScript, Vue, Vuetify, Nodejs, Git, Google Cloud, and Firebase',
+        img: "img/picts/8.png",
+        link: "https://virtualedgecreatives.com/"
+      },
+      {
         title: 'Laaste Kamp',
         text: "I developed Laaste Kamp website with the following tech stack:",
-        tech: 'Vue, Vuetify, JavaScript, Nodejs, and Git.',
+        tech: 'HTML, CSS, JavaScript, Vue, Vuetify, Nodejs, and Git.',
         img: 'img/picts/3.jpg',
         link: "https://laastekamp.co.za/"
       },
       {
         title: 'ZeeGroup',
         text: "I redesigned and currently maintaining ZeeGroup website with the following tech stack:",
-        tech: 'Wordpress with Divi Theme Builder.',
+        tech: 'Wordpress with Divi Theme Builder and many other plugins.',
         img: 'img/picts/4.jpg',
         link: "https://zeegroup.co.za/home/"
       },
       {
         title: 'Shutter Boss Photography',
         text: "I developed Shutter Boss Photography website with the following tech stack:",
-        tech: 'Vue, Vuetify, JavaScript, Nodejs, Git, and PWA(Progressive Web App).',
+        tech: 'HTML, CSS, JavaScript, Vue, Vuetify, Nodejs, Git, and PWA(Progressive Web App).',
         img: 'img/picts/2.jpg',
         link: "https://shutter-bug-47f01.web.app/"
       },
       {
         title: 'Salary CRUD system',
         text: "I built a salary based CRUD system to manage companies' salaries. Tech-stack used include:",
-        tech: 'Angular, Typescript, Nodejs, Git, and Bootstrap 5.',
+        tech: 'HTML, CSS, Bootstrap 5, JavaScript, Typescript, Angular, Nodejs, and Git.',
         img: 'img/picts/6.jpg',
         link: "https://github.com/Joachim098/AngularDemo"
       },
       {
         title: 'Stock System',
         text: "I built a stock based CRUD system to manage products. Tech-stack used include:",
-        tech: 'Vue, Vuetify, JavaScript, Git, and Nodejs.',
+        tech: 'HTML, CSS, JavaScript, Vue, Vuetify, Git, and Nodejs.',
         img: 'img/picts/7.jpg',
         link: "https://github.com/Joachim098/stock-system"
       }
