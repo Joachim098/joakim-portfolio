@@ -10,6 +10,7 @@
     >
       <v-col 
       align="start" 
+      md="6"
       :style="$vuetify.display.smAndDown ? 'margin-top: 1cm;' : 'margin-top: 2.5cm; margin-left: 2cm;'"
       >
         <v-row 
@@ -28,7 +29,7 @@
             :style="$vuetify.display.smAndDown ? 'font-weight: 500; font-size: 26px; margin-top: 15px;' : 'font-weight: 500; font-size: 35px;'"
             > 
               I'm Aganze Joakim Ngabo.
-              A full-stack web developer with<span class="text-primary"> 3 years</span> of professional work experience.
+              A full-stack web developer with<span class="text-primary"> 5<span style="font-size: 20px;">+</span> years</span> of professional work experience.
             </p>
             <br/>
             <p class="text-#BDBDBD" style="text-align: justify;">
@@ -65,14 +66,13 @@
           </v-col>
         </v-row>
       </v-col>
-      <v-col class="" md="6" v-if="!$vuetify.display.smAndDown">
+      <v-col v-if="!$vuetify.display.smAndDown">
         <v-img 
-        contain 
-        width="700" 
-        height="650" 
-        lazy-src="@/assets/15.png"
-        src="@/assets/15.png"
-        style="position: fixed;"
+        contain
+        width="550"
+        lazy-src="../../public/16.png"
+        src="../../public/16.png"
+        style="position: absolute; right: 0;"
         >
           <template v-slot:placeholder>
             <div class="d-flex align-center justify-center fill-height">
@@ -110,14 +110,11 @@ export default {
 </script>
 <style scoped>
 .rowBg{
-  transform: skewY(8deg);
-  background-image: url('../../public/15.png'); 
-  background-size: 300px; 
-  background-position: right; 
-  background-attachment: fixed;
+  background-image: url('../../public/16.png'); 
+  background-size: 400px; 
+  background-position: center; 
+  background-attachment: scroll;
   padding-top: 3cm; 
 }
-.colBg{
-  transform: skewY(-8deg);
-}
+
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <v-app class="bg-main" style="background: linear-gradient(to right, black, #05081e, black); font-family: Verdana;">
+  <v-app style="background: linear-gradient(to right, black, #05081e, black); font-family: sans-serif;">
     <v-app-bar 
       :height="$vuetify.display.smAndDown ? '100%' : '80'"
       flat
@@ -70,11 +70,11 @@
     </v-main>
     <v-footer elevation="0" :height="$vuetify.display.smAndDown ? '100%' : '80'" absolute style="background: linear-gradient(to right, black, #05081e, black);">
      <v-container fluid>
-      <v-row :justify="$vuetify.display.smAndDown ? 'center' : 'end'" :style="$vuetify.display.smAndDown ? 'display: block;' : ''">
-        <v-col :align="$vuetify.display.smAndDown ? 'center' : 'end'" :cols="$vuetify.display.smAndDown ? '' : '8'">
-          <p class="text-info" style="font-size: 20px;"> Social links </p>
-        </v-col>
-        <v-col :class="$vuetify.display.smAndDown ? 'mt-n2': ''" :align="$vuetify.display.smAndDown ? 'center' : 'start'" :cols="$vuetify.display.smAndDown ? '' : '3'">
+      <v-row>
+        <v-col 
+        class="d-inline-flex"
+        :class="$vuetify.display.smAndDown ? 'mt-n2 justify-center': 'justify-end'">
+          <p class="text-info mr-4" style="font-size: 20px;"> Social links </p>
           <a style="text-decoration: none;" href="https://www.linkedin.com/in/aganze-joakim-ngabo-609299175/" target="_blank">
             <v-icon size="30" class="text-primary mr-2">mdi-linkedin</v-icon>
           </a>
