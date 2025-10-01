@@ -34,7 +34,7 @@
                   <v-row justify="center">
                     <v-row>
                       <v-col :align="$vuetify.display.smAndDown ? 'center' : 'justify'" :class="$vuetify.display.smAndDown ? 'mx-3' : ''" style="font-size: 18px; line-height: 30px; font-weight: 500;">
-                        I am an ambitious problem solver with a passion for technology and, 3 years of professional work experience. <br v-if="$vuetify.display.smAndDown"/>As 
+                        I am an ambitious problem solver with a passion for technology and, 5+ years of professional work experience. <br v-if="$vuetify.display.smAndDown"/>As 
                         someone who takes responsibility for his own personal development, I am continually evaluating and upgrading my skills 
                         so that I stay at the cutting edge of technology. 
                       </v-col>
@@ -46,16 +46,16 @@
                       </v-row>
                       <v-row>
                         <v-col :align="$vuetify.display.smAndDown ? 'center' : 'justify'">
-                          For someone who's both an introvert and extrovert, I'm quite an adventurous person too! haha <br/>
+                          For someone who's both an introvert and extrovert, I'm quite an adventurous person too! <br/>
                           <br/>Here's a few of my hobbies: <br/> <br/>
                           <ul :class="$vuetify.display.smAndDown ? 'mx-4 text-justify' : 'ml-4'">
                             <li> 
-                              I love exploxing new places, chasing sunsets, and of course, trying out restaurant places 
+                              I love exploring new places, chasing sunsets, and of course, trying out different restaurants 
                               you know... a typical foodie trait.
                             </li> <br/>
                             <li>
-                              I enjoy spending my free time either by being 
-                              at home watching anime or by going out with friends when possible.
+                              I enjoy spending my free time playing tennis, going for a run,
+                              being at home watching anime or going out with friends when possible.
                             </li> <br/>
                             <Li>
                               I quite enjoy playing guitar as well. Music is good for my soul.
