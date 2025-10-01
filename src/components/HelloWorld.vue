@@ -1,7 +1,5 @@
 <template>
   <v-container 
-  fluid 
-  :style="$vuetify.display.smAndDown ? '' : 'margin-bottom: 2.5cm;'"
   >
     <v-row 
     justify="center" 
@@ -11,7 +9,7 @@
       <v-col 
       align="start" 
       md="6"
-      :style="$vuetify.display.smAndDown ? 'margin-top: 1cm;' : 'margin-top: 2.5cm; margin-left: 2cm;'"
+      :style="$vuetify.display.smAndDown ? 'margin-top: 1cm;' : 'margin-top: 2.5cm;'"
       >
         <v-row 
         justify="center"
@@ -66,13 +64,13 @@
           </v-col>
         </v-row>
       </v-col>
-      <v-col v-if="!$vuetify.display.smAndDown">
+      <v-col v-if="!$vuetify.display.smAndDown" md="4">
         <v-img 
         contain
         width="550"
         lazy-src="../../public/16.png"
         src="../../public/16.png"
-        style="position: absolute; right: 0;"
+        style="position: absolute; right: 1cm; top: 3cm;"
         >
           <template v-slot:placeholder>
             <div class="d-flex align-center justify-center fill-height">
@@ -114,7 +112,7 @@ export default {
   background-size: 400px; 
   background-position: center; 
   background-attachment: scroll;
-  padding-top: 3cm; 
+  padding-top: 5cm; 
 }
 
 </style>

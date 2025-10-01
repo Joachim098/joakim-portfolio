@@ -71,9 +71,10 @@
     <v-footer elevation="0" :height="$vuetify.display.smAndDown ? '100%' : '80'" absolute style="background: linear-gradient(to right, black, #05081e, black);">
      <v-container fluid>
       <v-row>
-        <v-col 
+        <v-col
+        :style="!$vuetify.display.smAndDown ? 'position: absolute; right: 4cm;' : ''" 
         class="d-inline-flex"
-        :class="$vuetify.display.smAndDown ? 'mt-n2 justify-center': 'justify-end'">
+        :class="$vuetify.display.smAndDown ? 'justify-center': 'justify-end'">
           <p class="text-info mr-4" style="font-size: 20px;"> Social links </p>
           <a style="text-decoration: none;" href="https://www.linkedin.com/in/aganze-joakim-ngabo-609299175/" target="_blank">
             <v-icon size="30" class="text-primary mr-2">mdi-linkedin</v-icon>

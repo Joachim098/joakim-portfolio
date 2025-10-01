@@ -1,9 +1,7 @@
 <template>
   <v-container 
   :fluid="$vuetify.display.smAndDown" 
-  :style="$vuetify.display.width > 650 
-  && $vuetify.display.width < 950 ? 'margin-top: 7cm;' 
-  : $vuetify.display.width < 650 ? 'margin-top: 3.5cm;' : 'margin-top: 2cm;'"
+ 
   >
     <v-row justify="center">
       <v-col align="start" md="6" sm="12">
@@ -25,6 +23,7 @@
           class="text-primary"
         ></v-btn>
         <v-item-group
+          v-if="!$vuetify.display.smAndDown"
           v-model="onboarding"
           class="text-center"
           mandatory
@@ -59,11 +58,10 @@
             class="d-flex justify-center align-center"
           >
           <v-row justify="center" :style="$vuetify.display.smAndDown ? 'display: block;' : ''">
-            <v-col md="5">
+            <v-col md="7">
               <v-img 
-              height="380px" 
-              :class="$vuetify.display.smAndDown ? 'bg-main' : 'ma-2 bg-main'" 
-              contain 
+              class="bg-white"
+              contain
               :lazy-src="item.src"
               :src="item.img"
               >
@@ -77,7 +75,7 @@
                 </template>
               </v-img>
             </v-col>
-            <v-col :class="$vuetify.display.smAndDown ? 'mb-6 mx-2 text-main' : 'mt-16 text-main'">
+            <v-col :class="$vuetify.display.smAndDown ? 'mb-6 mx-2 text-main' : 'my-3 text-main'">
               <h2>{{ item.title }}</h2>
               <br/>
               <p> {{ item.text }}</p>
@@ -112,7 +110,7 @@ export default {
         title: 'Dash Waste',
         text: "I developed and currently maintaining Dash Waste web app. It provides waste management services, pretty much like uber services. Tech stack used include:",
         tech: 'HTML, CSS, JavaScript, TypeScript, Vue, Vuetify, Nodejs, Git, Google Cloud, Firebase, and PWA(Progressive Web App).',
-        img: "img/picts/1.jpg",
+        img: "img/picts/1.png",
         link: "https://dashwaste.co.za/"
       },
       {
@@ -123,24 +121,45 @@ export default {
         link: "https://virtualedgecreatives.com/"
       },
       {
+        title: 'Titchfield Tree Services',
+        text: "I developed and currently maintaining Titchfield Tree Services. It provides a variety of tree removal services. CMS tools used include:",
+        tech: 'Wordpress with Elementor Theme Builder other plugins',
+        img: "img/picts/9.png",
+        link: "https://titchfieldtreeservices.com/"
+      },
+      {
         title: 'Laaste Kamp',
         text: "I developed Laaste Kamp website with the following tech stack:",
         tech: 'HTML, CSS, JavaScript, Vue, Vuetify, Nodejs, and Git.',
-        img: 'img/picts/3.jpg',
+        img: 'img/picts/3.png',
         link: "https://laastekamp.co.za/"
       },
       {
         title: 'ZeeGroup',
-        text: "I redesigned and currently maintaining ZeeGroup website with the following tech stack:",
-        tech: 'Wordpress with Divi Theme Builder and many other plugins.',
-        img: 'img/picts/4.jpg',
+        text: "I redesigned and currently maintaining ZeeGroup website with the following CMS tools:",
+        tech: 'Wordpress with Divi Theme Builder and other plugins.',
+        img: 'img/picts/4.png',
         link: "https://zeegroup.co.za/home/"
+      },
+      {
+        title: 'Umthi Initiatives',
+        text: "Currently maintaining Umthi Initiatives website with the following CMS tools:",
+        tech: 'Wordpress with Divi Theme Builder and other plugins.',
+        img: 'img/picts/10.png',
+        link: "https://umthi.africa/"
+      },
+      {
+        title: 'Container Homes',
+        text: "Currently maintaining Container Homes website with the following CMS tools:",
+        tech: 'Wordpress with Divi Theme Builder and other plugins.',
+        img: 'img/picts/11.png',
+        link: "https://umthi.africa/"
       },
       {
         title: 'Shutter Boss Photography',
         text: "I developed Shutter Boss Photography website with the following tech stack:",
         tech: 'HTML, CSS, JavaScript, Vue, Vuetify, Nodejs, Git, and PWA(Progressive Web App).',
-        img: 'img/picts/2.jpg',
+        img: 'img/picts/2.png',
         link: "https://shutter-bug-47f01.web.app/"
       },
       {
@@ -162,13 +181,17 @@ export default {
   }),
   methods: {
     next () {
-      if(this.onboarding < 5){
+      if(this.onboarding != this.items.length - 1){
         this.onboarding += 1;
+      } else {
+        this.onboarding = 0;
       }
     },
     prev () {
       if(this.onboarding != 0){
         this.onboarding -= 1;
+      } else {
+        this.onboarding = this.items.length - 1;
       }
     }
   }
